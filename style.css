@@ -37,8 +37,8 @@ section {
   height: fit-content;
   position: relative;
   top: 0;
-  margin: var(--rtc-s-spacing);
   font-size: var(--font-size);
+  margin: var(--rtc-s-spacing);
 }
 
 .CardImg {
