@@ -35,6 +35,7 @@ nav > div {
   background-color: var(--rtc-color-secondary);
   height: 125%;
   width: 95%;
+  border-radius: 25px;
 }
 
 .browserContainer {

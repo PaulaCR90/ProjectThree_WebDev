@@ -29,11 +29,12 @@
 section {
   width: 100%;
   column-count: 4;
-  padding: var(--rtc-m-spacing) var(--rtc-s-spacing);
+  padding: var(--rtc-m-spacing) var(--rtc-s-spacing) var(--rtc-s-spacing)
+    var(--rtc-s-spacing);
 }
 
 .Card {
-  width: 15rem;
+  width: 100%;
   height: fit-content;
   position: relative;
   top: 0;
@@ -42,9 +43,15 @@ section {
 }
 
 .CardImg {
-  width: 100%;
+  width: 90%;
   height: fit-content;
   border-radius: 25px;
+}
+
+.CardsArticle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1000px) {
