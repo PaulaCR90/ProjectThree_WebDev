@@ -1,0 +1,65 @@
+nav {
+  width: 100%;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navOptContainer {
+  width: 50px;
+  height: 50px;
+}
+.navOptContainer,
+.navOptContainerTiny > summary {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navOptContainer:hover,
+.navOptContainerTiny > summary:hover {
+  background-color: var(--rtc-color-secondary);
+  cursor: pointer;
+}
+
+.navOpt {
+  cursor: pointer;
+}
+
+.browser {
+  border: 0;
+  background-color: var(--rtc-color-secondary);
+  height: 125%;
+  width: 95%;
+}
+
+.browserContainer {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  background-color: var(--rtc-color-secondary);
+  padding: 5px 15px;
+  gap: 10px;
+  margin: 0 var(--rtc-s-spacing);
+  width: 75%;
+  height: 3rem;
+}
+
+.navOptContainerTiny > summary {
+  width: 30px;
+  height: 30px;
+}
+
+.browserContainer:hover,
+.browser:hover {
+  background-color: var(--rtc-color-secondary-hovered);
+}
+
+.user {
+  height: 24px;
+  border-radius: 100%;
+}

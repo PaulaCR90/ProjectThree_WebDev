@@ -1,0 +1,66 @@
+:root {
+  /*Colors*/
+  --rtc-color-primary: #ffffff;
+  --rtc-color-secondary: #e9e9e9;
+  --rtc-color-secondary-hovered: #d0d0d0;
+  --rtc-color-tertiary: #000000;
+  --rtc-color-red: #e60023;
+  --rtc-color-hover: #ad081b;
+  /*Spacings*/
+  --rtc-s-spacing: 1rem;
+  --rtc-m-spacing: 6rem;
+  /*Fonts*/
+  --font-size: 14px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+section {
+  width: 100%;
+  column-count: 4;
+  padding: var(--rtc-m-spacing) var(--rtc-s-spacing);
+}
+
+.Card {
+  width: 15rem;
+  height: fit-content;
+  position: relative;
+  top: 0;
+  margin: var(--rtc-s-spacing);
+  font-size: var(--font-size);
+}
+
+.CardImg {
+  width: 100%;
+  height: fit-content;
+  border-radius: 25px;
+}
+
+@media (max-width: 1000px) {
+  section {
+    columns: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  section {
+    columns: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    columns: 1;
+  }
+}
