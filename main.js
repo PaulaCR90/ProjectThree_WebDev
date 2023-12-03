@@ -1,5 +1,7 @@
 import { createCardsContainer } from './src/components/CardsContainer/CardsContainer'
+import { createFooter } from './src/components/Footer/Footer'
 import { createHeader } from './src/components/Header/Header'
+import { footer } from './src/utils/footerInfo'
 import './style.css'
 const divApp = document.querySelector('#app')
 
@@ -39,3 +41,6 @@ const handleKeyPress = (event) => {
 
 const input$$ = document.querySelector('input')
 input$$.addEventListener('keydown', handleKeyPress)
+
+const Footer = createFooter()
+divApp.appendChild(Footer)
