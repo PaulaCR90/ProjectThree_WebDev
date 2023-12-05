@@ -5,7 +5,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: var(--rtc-s-spacing);
   height: var(--rtc-m-spacing);
 }
@@ -23,7 +23,7 @@ footer > h3 {
   border-radius: 50px;
 }
 
-footer > div {
+footer > ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,7 +35,7 @@ footer > div {
     flex-direction: row;
   }
 
-  footer > div {
+  footer > ul {
     width: 50%;
   }
 }

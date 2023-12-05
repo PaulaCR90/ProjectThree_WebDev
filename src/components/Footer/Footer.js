@@ -10,8 +10,9 @@ export const createFooter = () => {
   RTC.textContent = 'Rock{TheCode}!'
   RTC.className = 'RTC'
   h3.appendChild(RTC)
-  const divFooter = document.createElement('div')
+  const ulFooter = document.createElement('ul')
   footer.forEach((element) => {
+    const li$$ = document.createElement('li')
     const a$$ = document.createElement('a')
     a$$.href = element.link
     a$$.className = 'footerLinks'
@@ -19,10 +20,10 @@ export const createFooter = () => {
     img$$.src = element.imgURL
     img$$.className = 'footerImgs'
     a$$.appendChild(img$$)
-    divFooter.appendChild(a$$)
+    ulFooter.appendChild(a$$)
   })
 
   footer$$.appendChild(h3)
-  footer$$.appendChild(divFooter)
+  footer$$.appendChild(ulFooter)
   return footer$$
 }

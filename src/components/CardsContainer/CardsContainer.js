@@ -17,6 +17,7 @@ export const createCardsContainer = (data) => {
     Card.className = 'Card'
     const Img = document.createElement('img')
     Img.className = 'CardImg'
+    Img.loading = 'lazy'
     Img.src = picData.urls.full
     const h3 = document.createElement('h3')
     h3.textContent = picData.alt_description
