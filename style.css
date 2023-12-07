@@ -26,6 +26,16 @@
   list-style: none;
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  margin-bottom: var(--rtc-m-spacing);
+}
+
 section {
   width: 100%;
   column-count: 4;
