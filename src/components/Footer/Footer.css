@@ -8,6 +8,9 @@ footer {
   justify-content: space-evenly;
   padding: var(--rtc-s-spacing);
   height: var(--rtc-m-spacing);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 footer > h3 {
